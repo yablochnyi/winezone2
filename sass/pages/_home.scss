@@ -1,0 +1,142 @@
+.intro {
+  margin: 50px 0;
+  overflow: hidden;
+  border-radius: 50px;
+  color: #ffff;
+  .swiper-slide {
+    padding: 41px 132px;
+    background: #000;
+    height: 333px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  &-discount {
+    margin: 10px 0 13px 0;
+    font-weight: 700;
+    font-size: 100px;
+  }
+  &-info {
+    font-weight: 600;
+    font-size: 20px;
+    color: #f7f7f7;
+  }
+  .intro-desc__title {
+    color: #fff;
+    max-width: 609px;
+    font-weight: 700;
+    font-size: 45px;
+  }
+  .white-slide {
+    .intro-title {
+      color: #232323;
+    }
+    .intro-discount {
+      color: #232323;
+    }
+    .intro-desc__title {
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 100%;
+      color: #232323;
+    }
+    .intro-info {
+      color: #a0a0a0;
+    }
+  }
+}
+
+// new-arrivals
+.new-arrivals {
+  .swiper-btn {
+    display: none;
+  }
+}
+.special-prices-swiper2 {
+  margin-top: 50px;
+}
+// new-arrivals
+
+.selected-brands {
+  margin: 100px 0;
+  .swiper-pagination {
+    display: none;
+  }
+  &__swiper {
+    max-width: 1110px;
+  }
+  &__slider {
+    position: relative;
+  }
+  .brand-img {
+    max-width: 150px;
+  }
+}
+
+// contact
+.contact {
+  &-boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  &-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 66px;
+    border-right: 1px solid #d3d3d3;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border: none;
+    }
+    &__title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      max-width: 181px;
+    }
+  }
+  &-faq {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    margin: 60px 0 50px 0;
+  }
+  .accordions,
+  .contact-map {
+    width: 50%;
+  }
+  .contact-map {
+    border-radius: 40px;
+    height: 545px;
+    iframe {
+      border-radius: inherit;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &-desc {
+    font-weight: 500;
+    line-height: 100%;
+    color: #656565;
+    max-width: 1018px;
+  }
+}
+// contact

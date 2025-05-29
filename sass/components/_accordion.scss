@@ -1,0 +1,124 @@
+.accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion {
+  background: #f7f7f7;
+  border-radius: 40px;
+  &.active {
+    .accordion-arrow {
+      transform: rotate(180deg);
+      background: #b61255;
+      path {
+        stroke: #fff;
+      }
+    }
+    .accordion-content {
+      display: flex;
+    }
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    cursor: pointer;
+  }
+  &-arrow {
+    background: #d3d3d3;
+    border-radius: 50%;
+    backdrop-filter: blur(100px);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s linear;
+    path {
+      transition: all 0.2s linear;
+    }
+  }
+  .accordion-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  &-content {
+    padding-inline: 30px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    gap: 14px;
+    display: none;
+  }
+  .call-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .link-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .img-box {
+      width: 22px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .contact-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #232323;
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .contact-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    position: relative;
+    padding-left: 10px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+    &.green {
+      &::before {
+        background: #037960;
+      }
+    }
+    &.yellow {
+      &::before {
+        background: #fe8a37;
+      }
+    }
+    &.red {
+      &::before {
+        background: #f62622;
+      }
+    }
+    &.purple {
+      &::before {
+        background: #953b8f;
+      }
+    }
+    &.brown {
+      &::before {
+        background: #902901;
+      }
+    }
+  }
+}

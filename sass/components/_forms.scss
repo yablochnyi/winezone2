@@ -1,0 +1,95 @@
+.custom-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+.custom-checkbox input {
+  display: none;
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+  border: 1px solid #a0a0a0;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: #a2003a;
+  border-color: transparent;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 2px;
+  width: 14px;
+  height: 11px;
+  background: url(../../images/icons/check.svg) no-repeat;
+}
+
+.label-text {
+  font-size: 15px;
+  line-height: 100%;
+  color: #656565;
+}
+
+.custom-radio {
+  position: relative;
+  padding-left: 26px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  display: inline-block;
+}
+
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-mark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid #a0a0a0;
+}
+
+.custom-radio input:checked ~ .radio-mark {
+  border-color: #b61255;
+  background: transparent;
+}
+
+.radio-mark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.custom-radio input:checked ~ .radio-mark::after {
+  display: block;
+}
+
+.custom-radio .radio-mark::after {
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #b61255;
+}

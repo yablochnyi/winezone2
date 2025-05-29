@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Oblique.woff2') format('woff2'),
+        url('Involve-Oblique.woff') format('woff'),
+        url('Involve-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-BoldOblique.woff2') format('woff2'),
+        url('Involve-BoldOblique.woff') format('woff'),
+        url('Involve-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Regular.woff2') format('woff2'),
+        url('Involve-Regular.woff') format('woff'),
+        url('Involve-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Bold.woff2') format('woff2'),
+        url('Involve-Bold.woff') format('woff'),
+        url('Involve-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-SemiBold.woff2') format('woff2'),
+        url('Involve-SemiBold.woff') format('woff'),
+        url('Involve-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-SemiBoldOblique.woff2') format('woff2'),
+        url('Involve-SemiBoldOblique.woff') format('woff'),
+        url('Involve-SemiBoldOblique.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-MediumOblique.woff2') format('woff2'),
+        url('Involve-MediumOblique.woff') format('woff'),
+        url('Involve-MediumOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Involve';
+    src: url('Involve-Medium.woff2') format('woff2'),
+        url('Involve-Medium.woff') format('woff'),
+        url('Involve-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

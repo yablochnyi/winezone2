@@ -1,0 +1,408 @@
+.catalog-page {
+  .breadcrumb {
+    margin: 20px 0;
+    justify-content: start;
+  }
+  .container {
+    max-width: 1358px;
+    margin: 0 auto;
+  }
+}
+
+.catalog-intro {
+  background: #010101 url(../../images/catalog-intro-bg.png) no-repeat;
+  background-position: 97% 0;
+  padding: 50px 40px;
+  border-radius: 30px;
+  color: #fff;
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 12px;
+  }
+  &__info {
+    max-width: 737px;
+  }
+  .show-more__text {
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    text-decoration-skip-ink: auto;
+    color: #fff;
+  }
+}
+
+.catalog-pagination {
+  margin-top: 65px;
+  
+}
+.catalog {
+  display: flex;
+  align-items: start;
+  margin-bottom: 90px;
+  gap: 40px;
+  .catalog-filter__container-title {
+    display: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .close-catalog__filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    display: none;
+  }
+  .open-filter__btn {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+  }
+  .product .product-img {
+    margin-bottom: 20px;
+  }
+  .product .space-box {
+    text-align: center;
+  }
+  .product-count__media {
+    display: none;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #a0a0a0;
+    margin-bottom: 24px;
+
+    span {
+      color: #232323;
+    }
+  }
+  .apply-btn {
+    width: 100%;
+    height: 44px;
+    background: #b61255;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    border-radius: 100px;
+  }
+  &-filter {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      &.show {
+        .catalog-filter__box-arrow {
+          transform: rotate(90deg);
+        }
+        .scroll-box {
+          display: block;
+        }
+      }
+      .scroll-box {
+        display: none;
+      }
+      &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 30px;
+        cursor: pointer;
+      }
+      &-arrow {
+        transition: all 0.2s linear;
+        path {
+          stroke: #a0a0a0;
+        }
+      }
+    }
+    .price-box {
+      display: flex;
+      gap: 8px;
+      input {
+        width: 100%;
+        height: 36px;
+        border-radius: 8px;
+        padding: 8px;
+        border: 1px solid #d3d3d3;
+      }
+    }
+    .scroll-box {
+      overflow-y: auto;
+      padding-right: 8px;
+      max-height: 213px;
+      .custom-checkboxes {
+        padding-right: 20px;
+      }
+      &::-webkit-scrollbar {
+        width: 4px;
+        border-radius: 100px;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        background: #a0a0a0;
+      }
+      &::-webkit-scrollbar-track {
+        background: #ededed;
+        border-radius: 100px;
+      }
+    }
+  }
+  .label-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .count {
+      font-size: 13px;
+      line-height: 100%;
+      color: #d3d3d3;
+    }
+  }
+  .stock-box {
+    background: #f7f7f7;
+    padding: 16px 20px;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    margin-bottom: 16px;
+    width: fit-content;
+  }
+  .right-box {
+    width: 100%;
+    .category-cards {
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 8px;
+    }
+    .product-sort {
+      margin: 52px 0 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__right {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        select {
+          border: none;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 100%;
+        }
+      }
+      &__info {
+        font-size: 15px;
+        line-height: 100%;
+        color: #a0a0a0;
+      }
+      .product-count {
+        font-size: 15px;
+        line-height: 100%;
+        color: #232323;
+        margin-left: 8px;
+      }
+    }
+    .view-btns {
+      display: flex;
+      gap: 12px;
+      & > button {
+        height: 24px;
+        path {
+          stroke: #d3d3d3;
+          fill: #d3d3d3;
+        }
+        &.active {
+          path {
+            stroke: #232323;
+            fill: #232323;
+          }
+        }
+      }
+    }
+  }
+
+  .catalog-product {
+    &__img-box {
+      position: relative;
+    }
+  }
+  &-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    .top-wines {
+      background: #b61255;
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 110.00000000000001%;
+        text-align: center;
+        color: #f7f7f7;
+        margin: 80px 37px 0 37px;
+      }
+      img {
+        height: 400px;
+        position: absolute;
+        bottom: -104px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .product-full__info {
+      display: none;
+    }
+    .product-content__bottom {
+      position: unset;
+      height: unset;
+      padding: 0;
+      text-align: center;
+      .add-cart__btn {
+        transition: none !important;
+      }
+      .space-box {
+        display: none;
+      }
+      .price-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 8px;
+        .new-price {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 100%;
+          color: #b61255;
+        }
+
+        .old-price {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 100%;
+          text-decoration: line-through;
+          color: #a0a0a0;
+        }
+      }
+    }
+    &.list-view {
+      grid-template-columns: 1fr;
+      .top-wines {
+        display: none;
+      }
+      .catalog-product {
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+      }
+      .catalog-produc__img-box {
+        width: 260px;
+        position: relative;
+        .payment-method,
+        .discount-box {
+          display: none;
+        }
+        .product-info__top {
+          position: unset;
+        }
+        .favourite-btn {
+          position: absolute;
+          top: 27px;
+          right: 20px;
+        }
+
+        .product-flag {
+          left: 20px;
+          position: absolute;
+          top: 27px;
+        }
+        .product-img {
+          padding-top: 25px;
+          height: 310px;
+        }
+      }
+      .catalog-product {
+        display: flex;
+        gap: 20px;
+      }
+      .product-full__info {
+        display: block;
+        flex: 1;
+      }
+      .product-content {
+        flex-direction: row;
+        gap: 20px;
+        flex: 1;
+      }
+      .list-none {
+        display: none;
+      }
+      .info-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 16px;
+        &__item {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 100%;
+          color: #232323;
+          span {
+            color: #a0a0a0;
+          }
+        }
+      }
+      .product-name {
+        margin-bottom: 2px;
+      }
+      .product-content__bottom {
+        position: unset;
+        width: fit-content;
+        padding: 0;
+        transition: none;
+        .price-box {
+          display: none;
+        }
+        .space-box {
+          display: flex;
+          margin-bottom: 8px;
+          align-items: start;
+        }
+        .add-cart__btn {
+          width: 193px;
+          transition: none;
+        }
+      }
+    }
+  }
+}
