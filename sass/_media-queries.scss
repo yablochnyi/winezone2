@@ -109,7 +109,7 @@
       background: #f7f7f7;
       top: 35%;
       path {
-        stroke: #232323;
+        stroke: #28282a;
       }
       &.next-btn {
         right: 0;
@@ -496,7 +496,7 @@
   }
   .footer-list {
     display: none;
-    margin-top: 15px;
+    margin-top: 13px;
     &.show {
       display: flex;
     }
@@ -568,7 +568,7 @@
     font-size: 14px;
   }
   .wine-beginners__cards {
-    gap: 50px;
+    gap: 60px;
   }
   .breadcrumb {
     margin: 25px 0;
@@ -919,5 +919,110 @@
   }
   .bottom-sale {
     display: flex;
+  }
+  .accordion .contact-list {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .accordion .contact-text,
+  .accordion .contact-item {
+    font-size: 14px;
+  }
+  .accordion-content {
+    padding: 0 20px 20px 20px;
+  }
+  .accordion .link-box .img-box {
+    width: 22px;
+    height: 22px;
+    padding: 2px;
+  }
+  .accordion .accordion-title {
+    font-size: 15px;
+  }
+  .contact .contact-map {
+    height: 291px;
+    border-radius: 30px;
+  }
+  .intro .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    margin: 2px !important;
+  }
+  .intro .white-slide .intro-desc__title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    width: 175px;
+  }
+  .intro .white-slide .intro-info {
+    width: 175px;
+  }
+  .intro .media-block {
+    display: block;
+  }
+  .intro .media-hide {
+    display: none;
+  }
+  .intro .slide-three .white-btn {
+    max-width: 117px;
+    font-size: 10px;
+    height: 30px;
+  }
+  .intro {
+    .swiper-slide {
+      &:first-child {
+        padding-top: 15px;
+      }
+    }
+  }
+  .intro .slide-three {
+    padding-top: 39px;
+    gap: 15px;
+    justify-content: start;
+  }
+  .info-box {
+    height: 19px;
+  }
+  .footer-bottom {
+    gap: 30px;
+  }
+  .catalog-intro__info {
+    height: 152px;
+    overflow: hidden;
+  }
+  .catalog-products .product-content__bottom .price-box {
+    bottom: 125px;
+  }
+  .catalog-product .product-text {
+    margin-bottom: 20px;
+  }
+  .wine-beginners .select-wine {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 8px;
+    overflow-x: auto;
+    justify-content: start;
+    margin-right: -20px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .news-page {
+    .breadcrumb {
+      margin: 16px 0 32px 0;
+      justify-content: start;
+    }
+    .select-wine {
+      margin-bottom: 32px;
+    }
+  }
+  .header-top {
+    padding-bottom: 0;
+  }
+  .articles-card__top {
+    margin-top: 20px;
+  }
+  .wine-beginners__cards .show-more__btn{
+    height: 44px;
   }
 }

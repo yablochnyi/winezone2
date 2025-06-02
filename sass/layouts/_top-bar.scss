@@ -1,6 +1,6 @@
 .top-bar {
-  background: #232323;
-  padding-block: 8px;
+  background: #28282a;
+  padding-block: 11px;
   .container {
     display: flex;
     align-items: center;
@@ -10,12 +10,15 @@
   &__box {
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 39px;
   }
   &__link {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #D3D3D3;
+    color: #d3d3d3;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
   }
 }

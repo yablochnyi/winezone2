@@ -69,7 +69,7 @@ ol {
 body {
   font-family: 'Involve', sans-serif;
   font-weight: 500;
-  color: #232323;
+  color: #28282a;
   font-size: 16px;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1228px;
   margin: 0 auto;
 }
 
@@ -92,6 +92,7 @@ body {
   font-weight: 700;
   font-size: 28px;
   line-height: 100%;
+  color: #28282a;
   span {
     font-weight: 500;
     font-style: italic;
@@ -113,6 +114,10 @@ body {
   background: #f7f7f7;
   border-radius: 100px;
   padding: 10px 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 15px;
   line-height: 100%;
@@ -124,6 +129,7 @@ body {
   align-items: center;
   gap: 5px;
   padding: 5px 10px;
+  height: 30px;
   border-radius: 100px;
   background: #b61255;
   font-weight: 600;

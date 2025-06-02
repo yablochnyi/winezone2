@@ -8,6 +8,13 @@
     color: #fff;
   }
 }
+.header-nav__discount.active {
+  background-color: #B61255;
+  color: #fff;
+  svg path {
+    fill: #fff;
+  }
+}
 .wine-beginners {
   margin-top: 40px;
   .select-wine {

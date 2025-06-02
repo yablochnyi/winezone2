@@ -1,15 +1,40 @@
 .intro {
-  margin: 50px 0;
+  margin: 50px 0 51px 0;
   overflow: hidden;
   border-radius: 50px;
   color: #ffff;
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin-inline: 5px !important;
+  }
   .swiper-slide {
-    padding: 41px 132px;
+    padding: 46px 132px 56px 132px;
     background: #000;
     height: 333px;
-    justify-content: center;
+    justify-content: start;
     display: flex;
     flex-direction: column;
+  }
+  .media-block {
+    display: none;
+  }
+  .slide-three {
+    justify-content: center;
+    gap: 31px;
+    .white-btn {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      color: #28282a;
+      background-color: #fff;
+      border-radius: 100px;
+      max-width: 285px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &-bg {
     width: 100%;
@@ -25,7 +50,7 @@
     font-size: 40px;
   }
   &-discount {
-    margin: 10px 0 13px 0;
+    margin: 19px 0 19px 0;
     font-weight: 700;
     font-size: 100px;
   }
@@ -42,16 +67,16 @@
   }
   .white-slide {
     .intro-title {
-      color: #232323;
+      color: #28282a;
     }
     .intro-discount {
-      color: #232323;
+      color: #28282a;
     }
     .intro-desc__title {
       font-weight: 700;
       font-size: 45px;
       line-height: 100%;
-      color: #232323;
+      color: #28282a;
     }
     .intro-info {
       color: #a0a0a0;
@@ -80,6 +105,7 @@
   }
   &__slider {
     position: relative;
+    text-align: center;
   }
   .brand-img {
     max-width: 150px;

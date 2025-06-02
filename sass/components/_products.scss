@@ -39,6 +39,7 @@
     margin: 0 auto;
     display: block;
     padding-top: 7px;
+    margin-bottom: 15px;
   }
   &-content {
     display: flex;
@@ -82,7 +83,7 @@
   &-name {
     font-weight: 700;
     font-size: 18px;
-    line-height: 100%;
+    line-height: normal;
   }
 }
 
@@ -90,7 +91,7 @@
   margin: 90px 0 100px 0;
   &-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
   }
   &-card {
@@ -147,7 +148,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: 20px;
+      margin-top: 12px;
     }
     &__text {
       font-weight: 500;
@@ -156,7 +157,7 @@
       color: #656565;
     }
     &__name {
-      margin: 20px 0 12px 0;
+      margin: 12px 0 8px 0;
       font-weight: 700;
       font-size: 20px;
       line-height: 100%;
@@ -174,3 +175,18 @@
   }
 }
 // articles
+
+.new-arrivals {
+  .product-img {
+    padding-top: 49px;
+  }
+}
+
+.wine-beginners__cards .show-more__btn {
+  background-color: transparent;
+  color: #28282a;
+  border: 1px solid #28282a;
+  svg path {
+    stroke: #28282a;
+  }
+}

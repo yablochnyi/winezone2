@@ -15,6 +15,9 @@
         stroke: #fff;
       }
     }
+    .accordion-header {
+      padding-bottom: 14px;
+    }
     .accordion-content {
       display: flex;
     }
@@ -63,25 +66,25 @@
     gap: 10px;
 
     .img-box {
-      width: 22px;
+      width: 24px;
+      height: 24px;
       display: flex;
       justify-content: center;
     }
   }
   .contact-text {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 100%;
-    color: #232323;
+    color: #28282A;
   }
   .contact-list {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 25px;
   }
   .contact-item {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 100%;
     position: relative;
     padding-left: 10px;
@@ -120,5 +123,8 @@
         background: #902901;
       }
     }
+  }
+  .footer-top {
+    gap: 10px;
   }
 }
