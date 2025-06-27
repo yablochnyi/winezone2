@@ -102,13 +102,18 @@ body {
 .show-more__link {
   font-weight: 700;
   line-height: 100%;
-  text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-offset: 0%;
   text-decoration-thickness: 0%;
   text-decoration-skip-ink: auto;
   color: #b61255;
+
+  background-color: #f0f0f0; // светло-серый фон
+  padding: 10px 16px;        // отступы сверху/снизу и по бокам
+  border-radius: 100px;        // скругление углов
+  display: inline-block;     // чтобы padding применялся корректно
 }
+
 
 .info-box {
   background: #f7f7f7;
