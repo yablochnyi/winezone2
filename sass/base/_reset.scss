@@ -98,6 +98,9 @@ body {
     font-style: italic;
     color: #a0a0a0;
   }
+  &.smaill-title {
+    font-size: 25px;
+  }
 }
 .show-more__link {
   font-weight: 700;
@@ -107,13 +110,13 @@ body {
   text-decoration-thickness: 0%;
   text-decoration-skip-ink: auto;
   color: #b61255;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
   background-color: #f0f0f0; // светло-серый фон
-  padding: 10px 16px;        // отступы сверху/снизу и по бокам
-  border-radius: 100px;        // скругление углов
-  display: inline-block;     // чтобы padding применялся корректно
+  padding: 10px 16px; // отступы сверху/снизу и по бокам
+  border-radius: 100px; // скругление углов
 }
-
 
 .info-box {
   background: #f7f7f7;

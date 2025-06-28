@@ -10,6 +10,38 @@
   .catalog-filter__title {
     font-size: 20px;
   }
+  .custom-select {
+    position: relative;
+    .selected-box {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 2px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 100%;
+      background: #fff;
+      border-radius: 5px;
+      z-index: 100;
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      margin-top: 10px;
+      min-width: 170px;
+      transform-origin: top;
+      transition: all .2s linear;
+      &.hide {
+        transform: scaleY(0);
+      }
+    }
+    .option {
+      cursor: pointer;
+    }
+  }
 }
 
 .catalog-intro {
@@ -427,4 +459,18 @@
 
 .catalog-products.list-view .product-content__bottom .add-cart__btn {
   height: 48px;
+}
+.catalog-products:not(.list-view) {
+  .catalog-produc__img-box {
+    height: 310px;
+    margin-bottom: 17px;
+    .product-img {
+      height: 100%;
+    }
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
